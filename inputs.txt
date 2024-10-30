@@ -1,0 +1,19 @@
+# Input Parameters #
+
+0> Input API Key
+
+
+1> Specify the name for this search session (e.g., "1D_AFM_material_search"):
+Hopfield_neutral_networks_search
+
+2> Specify the maximum number of searches to perform for each keyword combination (e.g., "10"):
+3
+
+3> Provide keywords for the search (e.g., "1D antiferromagnetic chain system"):
+Hopfield neural networks, Markowitz model, Hopfield model
+
+4> Search for compound name information? (Y/N) (e.g., "Y"):
+N
+
+5> Search for Spin information? (Y/N) (e.g., "Y"):
+N
