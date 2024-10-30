@@ -223,3 +223,5 @@ For All Users:
 - Downloads have mandatory delays (60 seconds minimum) between requests to comply with rate limits
 - Spin values are validated against quantum mechanical principles before being included in the output
 - Due to the factorial growth of combinations, users should be mindful when using more than 4 keywords, as this can lead to very long execution times. Each combination requires its own set of searches with appropriate waiting periods to avoid overloading the search servers.
+- This project is licensed under the MIT License - see the LICENSE file for details.
+
