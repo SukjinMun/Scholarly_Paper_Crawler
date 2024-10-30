@@ -2,24 +2,8 @@
 
 This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.
 
-### Directory Structure
+![image](https://github.com/user-attachments/assets/1b68ede6-4f84-4194-a4b9-777c9ca55dd0)
 
-root_directory/
-├── inputs.txt                       # Configuration file for input parameters
-├── webcrawler_paper_search.bat      # Batch file to execute the Python script
-├── pdf_files/                       # Directory to store downloaded PDF files
-│   └── [search_session_name]/       # Subfolder for each search session, named based on input
-├── pdf_first_100_sentences/         # Directory to store first 100 sentences from PDFs
-│   └── [search_session_name]/       # Subfolder containing text files of sentences
-│       └── LastName[Year]_first100.txt  # Text files named after their source PDFs
-├── csv_files/                       # Directory to store generated result files
-│   └── [search_session_name].xlsx   # Excel file for each search session, named based on input
-├── html_parsing/                    # Directory to store raw HTML from Google Scholar searches
-│   └── [search_session_name]/       # Subfolder containing raw HTML files for each search result
-├── arXiv_xml/                       # Directory to store XML responses from arXiv API
-│   └── [search_session_name]/       # Subfolder containing XML files from arXiv queries
-└── scripts/                         # Directory for Python scripts
-    └── webcrawler_paper_search.py   # Main Python script to run the pipeline
 
 html_parsing/:
 - Stores raw HTML content from Google Scholar search results
