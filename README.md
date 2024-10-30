@@ -1,7 +1,7 @@
 # README
 <img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
 
-This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.
+This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. **Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.**
 
 ![image](https://github.com/user-attachments/assets/1b68ede6-4f84-4194-a4b9-777c9ca55dd0)
 
