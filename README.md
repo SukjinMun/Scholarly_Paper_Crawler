@@ -58,7 +58,7 @@ root_directory/
 │   └── [search_session_name]/           # Subfolder containing raw HTML files for each search result
 ├── arXiv_xml/                           # Directory to store XML responses from arXiv API
 │   └── [search_session_name]/           # Subfolder containing XML files from arXiv queries
-├── scripts/                             # Directory for Python scripts
+└── scripts/                             # Directory for Python scripts
     └── webcrawler_paper_search.py       # Main Python script to run the pipeline
 ```
 ### 3.1 html_parsing
