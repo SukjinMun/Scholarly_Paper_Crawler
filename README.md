@@ -185,11 +185,11 @@ Each combination is treated as a separate search query, with the specified maxim
 csv_files/:
 - This directory contains Excel files generated from each search session.
 - Each session creates a file named after the session with detailed metadata including:
-  * Paper titles, authors, and year
-  * Extracted compound information
-  * Quantum spin values (following physical constraints)
-  * Keywords and links
-  * First 100 sentences from PDFs
+  - Paper titles, authors, and year
+  - Extracted compound information
+  - Quantum spin values (following physical constraints)
+  - Keywords and links
+  - First 100 sentences from PDFs
   
 ### 6.5 scripts
 - The main Python script that handles reading inputs, querying Google Scholar, downloading PDFs from Sci-Hub, and saving results to an Excel file.
@@ -202,9 +202,9 @@ csv_files/:
 - Trial duration: 7 days from account creation
 - Credits are one-time only and do not renew
 - After 7 days or using all credits (whichever comes first):
-  * Remaining credits expire
-  * API key stops working
-  * Must upgrade to paid plan to continue
+  - Remaining credits expire
+  - API key stops working
+  - Must upgrade to paid plan to continue
   
 ### 7.2 Paid Accounts
 - API keys remain active as long as account is in good standing
