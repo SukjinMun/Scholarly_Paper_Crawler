@@ -1,4 +1,37 @@
-# README
+# scholarly-paper-crawler
+
+## Table of contents
+1.0 About
+2.0 Important Notice
+3.0 Directory Structure
+   3.1 html_parsing/
+   3.2 arXiv_xml/
+   3.3 pdf_first_100_sentences/
+4.0 Pipeline Manual
+   4.1 Setup
+   4.2 Running the Pipeline
+   4.3 Checking Output
+5.0 Features
+   5.1 Spin Detection
+   5.2 Keyword Permutation
+6.0 Files Explained
+   6.1 inputs.txt
+   6.2 webcrawler_paper_search.bat
+   6.3 pdf_files/
+   6.4 csv_files/
+   6.5 scripts/
+7.0 API Management
+   7.1 Free Trial Accounts
+   7.2 Paid Accounts
+   7.3 Usage Monitoring
+   7.4 Best Practices
+8.0 Notes
+9.0 License
+10.0 Credits
+
+
+
+
 <img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
 
 This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. In the end, the pipeline stores and organizes the information in a separate XLSX file.
