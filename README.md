@@ -31,16 +31,79 @@
 * [10.0 Credits](#100-credits)
 
 
-
-
-
+## 1.0 About
 This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. In the end, the pipeline stores and organizes the information in a separate XLSX file.
 
 
+## 2.0 Important Notice
 **IMPORTANT: This pipeline performs automated web scraping that may be flagged as bot-like behavior by academic servers. Running it on institutional networks (universities or research institutes) risks IP bans that could affect all users on that network and disrupt legitimate research activities. Instead, use a private environment (home network, personal VPN) to protect both your institution and ensure successful data collection. This approach prevents potential institutional policy violations, avoids administrative issues with IT departments, and maintains uninterrupted access to academic resources for all users. For optimal performance and security, it is strongly recommended to use a reliable VPN service with IP rotation capabilities - this provides an additional layer of protection for both your personal IP and API usage. This helps preventing potential blocks from Google Scholar and other academic servers while maintaining consistent access to the ScraperAPI service.**
 **Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.**
 
-![image](https://github.com/user-attachments/assets/1b68ede6-4f84-4194-a4b9-777c9ca55dd0)
+
+## 3.0 Directory Structure
+### 3.1 html_parsing
+[html_parsing content goes here]
+
+### 3.2 arXiv_xml
+[arXiv_xml content goes here]
+
+### 3.3 pdf_first_100_sentences
+[pdf_first_100_sentences content goes here]
+
+## 4.0 Pipeline Manual
+### 4.1 Setup
+[Setup content goes here]
+
+### 4.2 Running the Pipeline
+[Running the Pipeline content goes here]
+
+### 4.3 Checking Output
+[Checking Output content goes here]
+
+## 5.0 Features
+### 5.1 Spin Detection
+[Spin Detection content goes here]
+
+### 5.2 Keyword Permutation
+[Keyword Permutation content goes here]
+
+## 6.0 Files Explained
+### 6.1 inputs.txt
+[inputs.txt content goes here]
+
+### 6.2 webcrawler_paper_search.bat
+[webcrawler_paper_search.bat content goes here]
+
+### 6.3 pdf_files
+[pdf_files content goes here]
+
+### 6.4 csv_files
+[csv_files content goes here]
+
+### 6.5 scripts
+[scripts content goes here]
+
+## 7.0 API Management
+### 7.1 Free Trial Accounts
+[Free Trial Accounts content goes here]
+
+### 7.2 Paid Accounts
+[Paid Accounts content goes here]
+
+### 7.3 Usage Monitoring
+[Usage Monitoring content goes here]
+
+### 7.4 Best Practices
+[Best Practices content goes here]
+
+## 8.0 Notes
+[Notes content goes here]
+
+## 9.0 License
+[License content goes here]
+
+## 10.0 Credits
+[Credits content goes here]
 
 
 html_parsing/:
