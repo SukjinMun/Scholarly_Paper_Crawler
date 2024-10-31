@@ -33,7 +33,7 @@
 
 
 ## 1.0 About
-This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. In the end, the pipeline stores and organizes the information in a separate XLSX file.
+This pipeline automates the search and retrieval of research paper metadata based on specified keywords. It uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. Designed primarily for studying and researching materials, this pipeline is especially useful for material science purposes. However, it is versatile enough to support other research areas as well, as it retrieves PDFs based on the keywords provided. At the end of the process, the pipeline organizes and stores the information in a separate XLSX file for easy reference.
 
 
 ## 2.0 Important Notice
