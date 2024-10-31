@@ -192,14 +192,15 @@ Each combination is treated as a separate search query, with the specified maxim
 - A batch file that automates the execution of the webcrawler_paper_search.py script.
 - It installs required Python packages and runs the main script.
 
-### 6.3 pdf_files
+### 6.3 pdf_files\
 - A directory that stores PDFs associated with the search results. 
 - Each search session creates a subfolder based on the session name.
 - The script attempts to download PDFs from Sci-Hub.
 - PDFs are named using the format: LastName[Year].pdf (e.g., Duan2021.pdf)
 
-### 6.4 csv_files
+### 6.4 csv_files\
 <img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
+
 - This directory contains Excel files generated from each search session.
 - Each session creates a file named after the session with detailed metadata including:
   - Paper titles, authors, and year
@@ -208,7 +209,7 @@ Each combination is treated as a separate search query, with the specified maxim
   - Keywords and links
   - First 100 sentences from PDFs
   
-### 6.5 scripts
+### 6.5 scripts\
 - The main Python script that handles reading inputs, querying Google Scholar, downloading PDFs from Sci-Hub, and saving results to an Excel file.
 - The script is configured with delays between requests to avoid detection and blocking.
 
