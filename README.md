@@ -285,7 +285,7 @@ SOFTWARE.
 
 ## 10.0 Credits
 
-Scholarly_Paper_Crawler is created by the following people:
+Scholarly_Paper_Crawler is created by:
 
 | First Name | Last Name |
 |------------|-----------|
