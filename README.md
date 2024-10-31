@@ -27,7 +27,7 @@
   * [7.3 Usage Monitoring](#73-usage-monitoring)
   * [7.4 Best Practices](#74-best-practices)
 * [8.0 Notes](#80-notes)
-* [9.0 Known Issues/Potential Future Updates](#90-license)
+* [9.0 Known Issues/Potential Future Updates](#90-known-issues/potential-future-updates)
 * [10.0 License](#100-license)
 * [11.0 Credits](#110-credits)
 
