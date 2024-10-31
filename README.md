@@ -1,34 +1,34 @@
 # scholarly-paper-crawler
 
 ## Table of contents
-1.0 About
-2.0 Important Notice
-3.0 Directory Structure
-   3.1 html_parsing/
-   3.2 arXiv_xml/
-   3.3 pdf_first_100_sentences/
-4.0 Pipeline Manual
-   4.1 Setup
-   4.2 Running the Pipeline
-   4.3 Checking Output
-5.0 Features
-   5.1 Spin Detection
-   5.2 Keyword Permutation
-6.0 Files Explained
-   6.1 inputs.txt
-   6.2 webcrawler_paper_search.bat
-   6.3 pdf_files/
-   6.4 csv_files/
-   6.5 scripts/
-7.0 API Management
-   7.1 Free Trial Accounts
-   7.2 Paid Accounts
-   7.3 Usage Monitoring
-   7.4 Best Practices
-8.0 Notes
-9.0 License
-10.0 Credits
 
+* [1.0 About](#10-about)
+* [2.0 Important Notice](#20-important-notice)
+* [3.0 Directory Structure](#30-directory-structure)
+  * [3.1 html_parsing](#31-html_parsing)
+  * [3.2 arXiv_xml](#32-arxiv_xml)
+  * [3.3 pdf_first_100_sentences](#33-pdf_first_100_sentences)
+* [4.0 Pipeline Manual](#40-pipeline-manual)
+  * [4.1 Setup](#41-setup)
+  * [4.2 Running the Pipeline](#42-running-the-pipeline)
+  * [4.3 Checking Output](#43-checking-output)
+* [5.0 Features](#50-features)
+  * [5.1 Spin Detection](#51-spin-detection)
+  * [5.2 Keyword Permutation](#52-keyword-permutation)
+* [6.0 Files Explained](#60-files-explained)
+  * [6.1 inputs.txt](#61-inputstxt)
+  * [6.2 webcrawler_paper_search.bat](#62-webcrawler_paper_searchbat)
+  * [6.3 pdf_files](#63-pdf_files)
+  * [6.4 csv_files](#64-csv_files)
+  * [6.5 scripts](#65-scripts)
+* [7.0 API Management](#70-api-management)
+  * [7.1 Free Trial Accounts](#71-free-trial-accounts)
+  * [7.2 Paid Accounts](#72-paid-accounts)
+  * [7.3 Usage Monitoring](#73-usage-monitoring)
+  * [7.4 Best Practices](#74-best-practices)
+* [8.0 Notes](#80-notes)
+* [9.0 License](#90-license)
+* [10.0 Credits](#100-credits)
 
 
 
