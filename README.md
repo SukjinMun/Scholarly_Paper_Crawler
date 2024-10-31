@@ -36,29 +36,70 @@ This pipeline automates the search and retrieval of research paper metadata base
 
 
 ## 2.0 Important Notice
-**IMPORTANT: This pipeline performs automated web scraping that may be flagged as bot-like behavior by academic servers. Running it on institutional networks (universities or research institutes) risks IP bans that could affect all users on that network and disrupt legitimate research activities. Instead, use a private environment (home network, personal VPN) to protect both your institution and ensure successful data collection. This approach prevents potential institutional policy violations, avoids administrative issues with IT departments, and maintains uninterrupted access to academic resources for all users. For optimal performance and security, it is strongly recommended to use a reliable VPN service with IP rotation capabilities - this provides an additional layer of protection for both your personal IP and API usage. This helps preventing potential blocks from Google Scholar and other academic servers while maintaining consistent access to the ScraperAPI service.**
+**This pipeline performs automated web scraping that may be flagged as bot-like behavior by academic servers. Running it on institutional networks (universities or research institutes) risks IP bans that could affect all users on that network and disrupt legitimate research activities. Instead, use a private environment (home network, personal VPN) to protect both your institution and ensure successful data collection. This approach prevents potential institutional policy violations, avoids administrative issues with IT departments, and maintains uninterrupted access to academic resources for all users. For optimal performance and security, it is strongly recommended to use a reliable VPN service with IP rotation capabilities - this provides an additional layer of protection for both your personal IP and API usage. This helps preventing potential blocks from Google Scholar and other academic servers while maintaining consistent access to the ScraperAPI service.**
 **Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.**
 
 
 ## 3.0 Directory Structure
+<img width="414" alt="image" src="https://github.com/user-attachments/assets/40fef836-9eac-4acf-960d-d226ab2d39c6">
+
 ### 3.1 html_parsing
-[html_parsing content goes here]
-
+- Stores raw HTML content from Google Scholar search results
+- Each search session has its own subfolder
+- Helps with debugging and analysis of search results
+- Files are named as paper_N_raw.html where N is the result number
 ### 3.2 arXiv_xml
-[arXiv_xml content goes here]
-
+- Stores XML responses from arXiv API queries
+- Each search session has its own subfolder
+- Contains detailed metadata about papers found on arXiv
+- Useful for tracking and debugging arXiv search results
 ### 3.3 pdf_first_100_sentences
-[pdf_first_100_sentences content goes here]
+- A directory that stores text files containing the first 100 sentences from each PDF
+- Each search session has its own subfolder named after the session
+- Text files are named to match their source PDFs (e.g., Duan2021_first100.txt)
+- Used for quick content preview and text analysis without opening PDFs
+- Files contain extracted and cleaned text from the beginning of each paper
+
+
+
+
 
 ## 4.0 Pipeline Manual
 ### 4.1 Setup
-[Setup content goes here]
+First, go to https://www.scraperapi.com/signup and create a free account. They offer 5,000 free API requests per month.
+After signing up, you will be directed to https://dashboard.scraperapi.com/. Retrieve your API Key in the API Key section. 
+Then, Enter search parameters in the inputs.txt file. Format example:
+
+    0> Input API Key
+    'API KEY YOU OBTAINED FROM SCRAPERAPI.COM'
+
+    1> Specify the name for this search session (e.g., "1D_AFM_material_search"):
+    1D_AFM_material_search
+
+    2> Specify the maximum number of searches to perform for each keyword combination (e.g., "10"):
+    3
+
+    3> Provide keywords for the search (e.g., "1D antiferromagnetic chain system"):
+    one dimensional antiferromagnetic chain system, 1D antiferromagnetic chain system, quasi-1d AFM
+
+    4> Search for compound name information? (Y/N) (e.g., "Y"):
+    Y
+
+    5> Search for Spin information? (Y/N) (e.g., "Y"):
+    Y
+
+**Note:**
+**Processing 45 papers (15 keyword combinations with 3 searches each) typically takes approximately 5 hours due to mandatory waiting periods and rate limiting**
 
 ### 4.2 Running the Pipeline
-[Running the Pipeline content goes here]
+- Execute webcrawler_paper_search.bat to install required dependencies and launch the script automatically.
+- The script reads from inputs.txt, performs the search on Google Scholar, attempts to download PDFs from Sci-Hub, and saves results into an Excel file within csv_files/.
 
 ### 4.3 Checking Output
-[Checking Output content goes here]
+- The Excel file will contain titles, authors, publication year, keywords, Google Scholar links, and PDF filenames.
+- You can explore and analyze the results from the csv_files/ directory.
+- Downloaded PDFs can be found in the pdf_files/[search_session_name]/ directory.
+
 
 ## 5.0 Features
 ### 5.1 Spin Detection
@@ -106,61 +147,6 @@ This pipeline automates the search and retrieval of research paper metadata base
 [Credits content goes here]
 
 
-html_parsing/:
-- Stores raw HTML content from Google Scholar search results
-- Each search session has its own subfolder
-- Helps with debugging and analysis of search results
-- Files are named as paper_N_raw.html where N is the result number
-
-arXiv_xml/:
-- Stores XML responses from arXiv API queries
-- Each search session has its own subfolder
-- Contains detailed metadata about papers found on arXiv
-- Useful for tracking and debugging arXiv search results
-
-pdf_first_100_sentences/:
-- A directory that stores text files containing the first 100 sentences from each PDF
-- Each search session has its own subfolder named after the session
-- Text files are named to match their source PDFs (e.g., Duan2021_first100.txt)
-- Used for quick content preview and text analysis without opening PDFs
-- Files contain extracted and cleaned text from the beginning of each paper
-
-
-### Pipeline Manual
-0. First, go to https://www.scraperapi.com/signup and create a free account. They offer 5,000 free API requests per month.
-   After signing up, you will be directed to https://dashboard.scraperapi.com/. Retrieve your API Key in the API Key section. 
-
-1. Enter search parameters in the inputs.txt file. Format example:
-
-    0> Input API Key
-    'API KEY YOU OBTAINED FROM SCRAPERAPI.COM'
-
-    1> Specify the name for this search session (e.g., "1D_AFM_material_search"):
-    1D_AFM_material_search
-
-    2> Specify the maximum number of searches to perform for each keyword combination (e.g., "10"):
-    3
-
-    3> Provide keywords for the search (e.g., "1D antiferromagnetic chain system"):
-    one dimensional antiferromagnetic chain system, 1D antiferromagnetic chain system, quasi-1d AFM
-
-    4> Search for compound name information? (Y/N) (e.g., "Y"):
-    Y
-
-    5> Search for Spin information? (Y/N) (e.g., "Y"):
-    Y
-
-2. Run the Batch File:
-- Execute webcrawler_paper_search.bat to install required dependencies and launch the script automatically.
-- The script reads from inputs.txt, performs the search on Google Scholar, attempts to download PDFs from Sci-Hub, and saves results into an Excel file within csv_files/.
-
-3. Check the Output:
-- The Excel file will contain titles, authors, publication year, keywords, Google Scholar links, and PDF filenames.
-- You can explore and analyze the results from the csv_files/ directory.
-- Downloaded PDFs can be found in the pdf_files/[search_session_name]/ directory.
-
-**Note:**
-**Processing 45 papers (15 keyword combinations with 3 searches each) typically takes approximately 5 hours due to mandatory waiting periods and rate limiting**
 
 
 ### Spin Detection Feature
