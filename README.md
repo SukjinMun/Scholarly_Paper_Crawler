@@ -286,14 +286,8 @@ SOFTWARE.
 ## 10.0 Credits
 
 Scholarly_Paper_Crawler is created by:
-
-| First Name | Last Name |
-|------------|-----------|
-| Suk Jin    | Mun       |
+* Suk Jin Mun (SukjinMUn) - Main author (1.0.0)
 
 Thanks to:
-
-| First Name | Last Name |
-|------------|-----------|
-| Sungkyun   | Choi      |
+* Sungkyun Choi - Project Supervisor (1.0.0)
 
