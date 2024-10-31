@@ -1,5 +1,6 @@
 # Scholarly_Paper_Crawler
-<img width="526" alt="image" src="https://github.com/user-attachments/assets/391a262e-2932-4ce1-8cd0-1df48a0b76b9">
+<img src="https://github.com/user-attachments/assets/391a262e-2932-4ce1-8cd0-1df48a0b76b9" alt="image" width="800">
+
 
 ## Table of contents
 
