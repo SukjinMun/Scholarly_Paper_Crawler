@@ -280,7 +280,7 @@ For All Users:
 
 ## 9.0 Known Issues and Future Updates
 
-# Ver 1.0.0
+#### Ver 1.0.0
 - Compound names and spin values are currently not retrieved accurately in most cases, especially when the script attempts to extract them from the first 100 sentences of the PDF.
 - Information on single crystal/powder form, method, and size will be included in upcoming versions of the pipeline.
 - PDF retrieval occasionally fails due to an unstable API connection with Sci-Hub or arXiv.
