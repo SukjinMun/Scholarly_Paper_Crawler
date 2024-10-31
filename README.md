@@ -1,4 +1,4 @@
-# scholarly-paper-crawler
+# Scholarly_Paper_Crawler
 
 ## Table of contents
 
@@ -61,9 +61,6 @@ This pipeline automates the search and retrieval of research paper metadata base
 - Files contain extracted and cleaned text from the beginning of each paper
 
 
-
-
-
 ## 4.0 Pipeline Manual
 ### 4.1 Setup
 First, go to https://www.scraperapi.com/signup and create a free account. They offer 5,000 free API requests per month.
@@ -103,54 +100,6 @@ Then, Enter search parameters in the inputs.txt file. Format example:
 
 ## 5.0 Features
 ### 5.1 Spin Detection
-[Spin Detection content goes here]
-
-### 5.2 Keyword Permutation
-[Keyword Permutation content goes here]
-
-## 6.0 Files Explained
-### 6.1 inputs.txt
-[inputs.txt content goes here]
-
-### 6.2 webcrawler_paper_search.bat
-[webcrawler_paper_search.bat content goes here]
-
-### 6.3 pdf_files
-[pdf_files content goes here]
-
-### 6.4 csv_files
-[csv_files content goes here]
-
-### 6.5 scripts
-[scripts content goes here]
-
-## 7.0 API Management
-### 7.1 Free Trial Accounts
-[Free Trial Accounts content goes here]
-
-### 7.2 Paid Accounts
-[Paid Accounts content goes here]
-
-### 7.3 Usage Monitoring
-[Usage Monitoring content goes here]
-
-### 7.4 Best Practices
-[Best Practices content goes here]
-
-## 8.0 Notes
-[Notes content goes here]
-
-## 9.0 License
-[License content goes here]
-
-## 10.0 Credits
-[Credits content goes here]
-
-
-
-
-### Spin Detection Feature
-
 The pipeline includes automated detection of quantum mechanical spin values from papers. This feature:
 
 - Extracts physically valid spin values following quantum mechanical principles
@@ -169,39 +118,7 @@ The spin values are extracted in formats:
 - S=X (integer values)
 Where X and Y are integer numbers following quantum mechanical constraints.
 
-
-### Files Explained
-
-inputs.txt:
-- This file contains the parameters for the search pipeline.
-- Parameters include the search session name, the maximum number of search results to retrieve, and keywords.
-
-webcrawler_paper_search.bat:
-- A batch file that automates the execution of the webcrawler_paper_search.py script.
-- It installs required Python packages and runs the main script.
-
-pdf_files/:
-- A directory that stores PDFs associated with the search results. 
-- Each search session creates a subfolder based on the session name.
-- The script attempts to download PDFs from Sci-Hub.
-- PDFs are named using the format: LastName[Year].pdf (e.g., Duan2021.pdf)
-
-<img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
-csv_files/:
-- This directory contains Excel files generated from each search session.
-- Each session creates a file named after the session with detailed metadata including:
-  * Paper titles, authors, and year
-  * Extracted compound information
-  * Quantum spin values (following physical constraints)
-  * Keywords and links
-  * First 100 sentences from PDFs
-
-scripts/webcrawler_paper_search.py:
-- The main Python script that handles reading inputs, querying Google Scholar, downloading PDFs from Sci-Hub, and saving results to an Excel file.
-- The script is configured with delays between requests to avoid detection and blocking.
-
-
-### Keyword Permutation Feature
+### 5.2 Keyword Permutation
 The pipeline implements comprehensive keyword combination searching that examines all possible permutations of the input keywords. This feature:
 
   * Generates all possible combinations of input keywords, including individual terms and their permutations
@@ -248,9 +165,39 @@ Each combination is treated as a separate search query, with the specified maxim
   * Recording which search terms found each paper
 
 
-### API Key Management and Monitoring
+## 6.0 Files Explained
+### 6.1 inputs.txt
+- This file contains the parameters for the search pipeline.
+- Parameters include the search session name, the maximum number of search results to retrieve, and keywords.
 
-#### Free Trial Accounts
+### 6.2 webcrawler_paper_search.bat
+- A batch file that automates the execution of the webcrawler_paper_search.py script.
+- It installs required Python packages and runs the main script.
+
+### 6.3 pdf_files
+- A directory that stores PDFs associated with the search results. 
+- Each search session creates a subfolder based on the session name.
+- The script attempts to download PDFs from Sci-Hub.
+- PDFs are named using the format: LastName[Year].pdf (e.g., Duan2021.pdf)
+
+### 6.4 csv_files
+<img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
+csv_files/:
+- This directory contains Excel files generated from each search session.
+- Each session creates a file named after the session with detailed metadata including:
+  * Paper titles, authors, and year
+  * Extracted compound information
+  * Quantum spin values (following physical constraints)
+  * Keywords and links
+  * First 100 sentences from PDFs
+  
+### 6.5 scripts
+- The main Python script that handles reading inputs, querying Google Scholar, downloading PDFs from Sci-Hub, and saving results to an Excel file.
+- The script is configured with delays between requests to avoid detection and blocking.
+
+
+## 7.0 API Management
+### 7.1 Free Trial Accounts
 - Initial free credits: 5,000 requests
 - Trial duration: 7 days from account creation
 - Credits are one-time only and do not renew
@@ -258,13 +205,13 @@ Each combination is treated as a separate search query, with the specified maxim
   * Remaining credits expire
   * API key stops working
   * Must upgrade to paid plan to continue
-
-#### Paid Accounts
+  
+### 7.2 Paid Accounts
 - API keys remain active as long as account is in good standing
 - Credits reset monthly based on subscription plan
 - The key itself doesn't expire unless manually revoked
-
-#### Monitoring Your Usage
+  
+### 7.3 Usage Monitoring
 1. Through ScraperAPI Dashboard (https://www.scraperapi.com/dashboard):
    - View current credit balance
    - Monitor daily/monthly usage statistics
@@ -281,13 +228,12 @@ Each combination is treated as a separate search query, with the specified maxim
    "Success" 
      → API key is valid and has available credits
    ```
-
-#### Credit Usage Guidelines
+   
+### 7.4 Best Practices
 - Each Google Scholar search page uses 1 credit
 - Typically 10 results per page
 - Example: 100 papers might use 10-20 credits
 
-#### Best Practices
 For Free Trial:
 - Plan searches carefully within 7-day window
 - Start with smaller searches to test the system
@@ -300,9 +246,8 @@ For All Users:
 - Consider upgrading if you need regular access
 - Save API usage statistics for future planning
 
-
-
-### Notes
+  
+## 8.0 Notes
 - The script saves raw HTML from Google Scholar searches for analysis
 - ArXiv is used as an alternative source when Sci-Hub download fails
 - The script implements exponential backoff and retry mechanisms for robust web scraping
@@ -312,3 +257,11 @@ For All Users:
 - Spin values are validated against quantum mechanical principles before being included in the output
 - Due to the factorial growth of combinations, users should be mindful when using more than 4 keywords, as this can lead to very long execution times. Each combination requires its own set of searches with appropriate waiting periods to avoid overloading the search servers.
 - This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+## 9.0 License
+[License content goes here]
+
+
+## 10.0 Credits
+[Credits content goes here]
