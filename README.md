@@ -30,7 +30,7 @@ pdf_first_100_sentences/:
 - Files contain extracted and cleaned text from the beginning of each paper
 
 
-### How the Pipeline Works
+### Pipeline Manual
 0. First, go to https://www.scraperapi.com/signup and create a free account. They offer 5,000 free API requests per month.
    After signing up, you will be directed to https://dashboard.scraperapi.com/. Retrieve your API Key in the API Key section. 
 
