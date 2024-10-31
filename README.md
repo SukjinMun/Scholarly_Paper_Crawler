@@ -41,7 +41,7 @@ This pipeline automates the search and retrieval of research paper metadata base
 
 
 ## 3.0 Directory Structure
-<img width="414" alt="image" src="https://github.com/user-attachments/assets/40fef836-9eac-4acf-960d-d226ab2d39c6">
+root_directory/ ├── inputs.txt # Configuration file for input parameters ├── webcrawler_paper_search.bat # Batch file to execute the Python script ├── pdf_files/ # Directory to store downloaded PDF files │ └── [search_session_name]/ # Subfolder for each search session, named based on input ├── pdf_first_100_sentences/ # Directory to store first 100 sentences from PDFs │ └── [search_session_name]/ # Subfolder containing text files of sentences │ └── LastName[Year]_first100.txt # Text files named after their source PDFs ├── csv_files/ # Directory to store generated result files │ └── [search_session_name].xlsx # Excel file for each search session, named based on input ├── html_parsing/ # Directory to store raw HTML from Google Scholar searches │ └── [search_session_name]/ # Subfolder containing raw HTML files for each search result ├── arXiv_xml/ # Directory to store XML responses from arXiv API │ └── [search_session_name]/ # Subfolder containing XML files from arXiv queries ├── scripts/ # Directory for Python scripts │ └── webcrawler_paper_search.py # Main Python script to run the pipeline
 
 ### 3.1 html_parsing
 - Stores raw HTML content from Google Scholar search results
