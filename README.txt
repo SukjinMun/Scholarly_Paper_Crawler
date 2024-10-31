@@ -1,6 +1,10 @@
 # README
 
-This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.
+This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. In the end, the pipeline stores and organizes the information in a separate XLSX file.
+
+**IMPORTANT: This pipeline performs automated web scraping that may be flagged as bot-like behavior by academic servers. Running it on institutional networks (universities or research institutes) risks IP bans that could affect all users on that network and disrupt legitimate research activities. Instead, use a private environment (home network, personal VPN) to protect both your institution and ensure successful data collection. This approach prevents potential institutional policy violations, avoids administrative issues with IT departments, and maintains uninterrupted access to academic resources for all users. For optimal performance and security, it is strongly recommended to use a reliable VPN service with IP rotation capabilities - this provides an additional layer of protection for both your personal IP and API usage. This helps preventing potential blocks from Google Scholar and other academic servers while maintaining consistent access to the ScraperAPI service.**
+**Users must thoroughly review this documentation before using the pipeline, as a complete understanding is essential for successful operation of this pipeline.**
+
 
 ### Directory Structure
 
@@ -41,7 +45,7 @@ pdf_first_100_sentences/:
 - Files contain extracted and cleaned text from the beginning of each paper
 
 
-### How the Pipeline Works
+### Pipeline Manual
 0. First, go to https://www.scraperapi.com/signup and create a free account. They offer 5,000 free API requests per month.
    After signing up, you will be directed to https://dashboard.scraperapi.com/. Retrieve your API Key in the API Key section. 
 
@@ -73,6 +77,8 @@ pdf_first_100_sentences/:
 - The Excel file will contain titles, authors, publication year, keywords, Google Scholar links, and PDF filenames.
 - You can explore and analyze the results from the csv_files/ directory.
 - Downloaded PDFs can be found in the pdf_files/[search_session_name]/ directory.
+
+Note: Processing 45 papers (15 keyword combinations with 3 searches each) typically takes approximately 5 hours due to mandatory waiting periods and rate limiting
 
 
 ### Spin Detection Feature
