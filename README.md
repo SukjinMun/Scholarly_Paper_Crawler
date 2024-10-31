@@ -63,6 +63,9 @@ pdf_first_100_sentences/:
 - You can explore and analyze the results from the csv_files/ directory.
 - Downloaded PDFs can be found in the pdf_files/[search_session_name]/ directory.
 
+**Note:**
+**Processing 45 papers (15 keyword combinations with 3 searches each) typically takes approximately 5 hours due to mandatory waiting periods and rate limiting**
+
 
 ### Spin Detection Feature
 
