@@ -121,11 +121,11 @@ Where X and Y are integer numbers following quantum mechanical constraints.
 ### 5.2 Keyword Permutation
 The pipeline implements comprehensive keyword combination searching that examines all possible permutations of the input keywords. This feature:
 
-  * Generates all possible combinations of input keywords, including individual terms and their permutations
-  * Searches each combination separately in Google Scholar
-  * Performs the specified number of searches (max_results) for EACH combination
-  * Maintains a wait period between combinations to comply with rate limits
-  * Automatically skips duplicate papers found across different combinations
+  -  Generates all possible combinations of input keywords, including individual terms and their permutations
+  -  Searches each combination separately in Google Scholar
+  -  Performs the specified number of searches (max_results) for EACH combination
+  -  Maintains a wait period between combinations to comply with rate limits
+  -  Automatically skips duplicate papers found across different combinations
 
 For example, if keywords "A, B, C" are provided (line 3> of inputs.txt), the pipeline will search for:
 
