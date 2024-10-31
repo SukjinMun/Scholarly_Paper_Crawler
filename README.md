@@ -284,4 +284,10 @@ SOFTWARE.
 
 
 ## 10.0 Credits
-[Credits content goes here]
+Scholarly_Paper_Crawler is created by the following people:
+|---------------|-------------------|
+| Suk Jin       | Mun               |
+
+Thanks to:
+|---------------|-------------------|
+| Sungkyun      | Choi              |
