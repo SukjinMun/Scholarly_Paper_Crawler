@@ -43,6 +43,7 @@ This pipeline automates the search and retrieval of research paper metadata base
 ## 3.0 Directory Structure
 ### Directory Structure
 
+```bash
 root_directory/
 ├── inputs.txt                           # Configuration file for input parameters
 ├── webcrawler_paper_search.bat          # Batch file to execute the Python script
@@ -59,8 +60,7 @@ root_directory/
 │   └── [search_session_name]/           # Subfolder containing XML files from arXiv queries
 ├── scripts/                             # Directory for Python scripts
     └── webcrawler_paper_search.py       # Main Python script to run the pipeline
-
-
+```
 ### 3.1 html_parsing
 - Stores raw HTML content from Google Scholar search results
 - Each search session has its own subfolder
