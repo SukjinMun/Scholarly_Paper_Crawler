@@ -32,7 +32,7 @@
 
 
 
-<img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
+
 
 This pipeline automates the search and retrieval of research paper metadata based on specified keywords. The pipeline uses Google Scholar to gather information on research papers, including links and author details, and attempts to download PDFs from Sci-Hub. In the end, the pipeline stores and organizes the information in a separate XLSX file.
 
@@ -137,6 +137,7 @@ pdf_files/:
 - The script attempts to download PDFs from Sci-Hub.
 - PDFs are named using the format: LastName[Year].pdf (e.g., Duan2021.pdf)
 
+<img width="1544" alt="image" src="https://github.com/user-attachments/assets/2b3aff7e-0632-4d45-bcc0-5e87570bb5c7">
 csv_files/:
 - This directory contains Excel files generated from each search session.
 - Each session creates a file named after the session with detailed metadata including:
