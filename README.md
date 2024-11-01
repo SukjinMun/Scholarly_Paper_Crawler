@@ -283,9 +283,13 @@ For All Users:
 ## 9.0 Known Issues and Future Updates
 
 #### Ver 1.0.0
-- Compound names and spin values are currently not retrieved accurately in most cases, especially when the script attempts to extract them from the first 100 sentences of the PDF.
-- Information on single crystal/powder form, method, and size will be included in upcoming versions of the pipeline.
-- PDF retrieval occasionally fails due to an unstable API connection with Sci-Hub or arXiv.
+###### Issues
+- Current compound name and spin value extraction algorithms exhibit reduced accuracy. This indicates the pipeline requires further refinement of the extraction logic.
+- The pipeline currently lacks the capability to extract and classify material properties such as crystal structure (single crystal/powder form), synthesis methods, and dimensional characteristics.
+- PDF retrieval success rate is inconsistent due to intermittent connectivity issues with Sci-Hub and arXiv APIs, necessitating more robust fallback mechanisms.
+###### Future Updates
+- Performance optimization to significantly reduce the overall processing time per paper, with focus on parallel processing and improved rate limiting strategies.
+- Integration of AI-powered models
 
 
 ## 10.0 License
