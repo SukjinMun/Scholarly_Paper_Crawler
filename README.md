@@ -317,6 +317,6 @@ SOFTWARE.
 Scholarly_Paper_Crawler is created by:
 * Suk Jin Mun (SukjinMun) - Main author (1.0.0)
 
-Thanks to:
-* Sungkyun Choi - Project Supervisor (1.0.0)
+Special thanks to:
+* Sungkyun Choi (1.0.0)
 
