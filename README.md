@@ -286,7 +286,7 @@ For All Users:
 ###### Issues
 - Current compound name and spin value extraction algorithms exhibit reduced accuracy. This indicates the pipeline requires further refinement of the extraction logic.
 - The pipeline currently lacks the capability to extract and classify material properties such as crystal structure (single crystal/powder form), synthesis methods, and dimensional characteristics.
-- PDF retrieval success rate is inconsistent due to intermittent connectivity issues with Sci-Hub and arXiv APIs, necessitating more robust fallback mechanisms.
+- PDF retrieval success rate is inconsistent due to intermittent connectivity issues with Sci-Hub and arXiv APIs, which requires more robust fallback mechanisms.
 ###### Future Updates
 - Performance optimization to significantly reduce the overall processing time per paper, with focus on parallel processing and improved rate limiting strategies.
 - Integration of AI-powered models
